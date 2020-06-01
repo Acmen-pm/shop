@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>西餐厅</title>
+    <style type="text/css">
+        body {
+            font: 62.5% "Trebuchet MS",sans-serif;
+            margin: 64px;
+            background-color: lightpink;
+        }
+
+        #h2-caption {
+            font: 20px "Trebuchet MS",sans-serif;
+        }
+
+        p {
+            font: 13.5px "Trebuchet MS",sans-serif;
+            color: oldlace;
+            font-size: x-large;
+        }
+
+        #div-log {
+            font: 13.5px "Trebuchet MS",sans-serif;
+        }
+    </style>
+    <script src="素材/JQ/jquery-1.9.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var list = [];
+            $("table tr>td").bind("click", function () {
+                for (var i = 0; i < list.length; i++) {
+                    if ($(this).text() == list[i])
+                        return;
+                }
+                $("#div-log").html($("#div-log").html() + "<p style='color:white;display:inline-block;'>已预订：" + $(this).html() + "</p></br>");
+                list.push($(this).text());
+                $(this).css("color", "silver");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <h2 id="h2-caption">请点击，选择就餐区域</h2>
+    <hr />
+    <br />
+    <table style="color:cornflowerblue;font-size:xx-large;">
+
+        <tr>
+            <td>一楼 桌号：B11</td>
+            <td>一楼 桌号：B12</td>
+            <td>一楼 桌号：B13</td>
+            <td>一楼 桌号：C11</td>
+            <td>一楼 桌号：C12</td>
+            <td>一楼 桌号：C13</td>
+        </tr>
+        <tr>
+
+            <td>二楼 桌号：A2VIP</td>
+            <td>一楼 桌号：A21</td>
+            <td>二楼 桌号：A22</td>
+            <td>二楼 桌号：A23</td>
+            <td>二楼 桌号：A24</td>
+            <td>二楼 桌号：A25</td>
+        </tr>
+        <tr>
+            <td>三楼 桌号：B3VIP</td>
+            <td>三楼 桌号：B31</td>
+            <td>三楼 桌号：B32</td>
+            <td>三楼 桌号：B33</td>
+            <td>三楼 桌号：C34</td>
+            <td>三楼 桌号：C35</td>
+           
+        </tr>
+    </table>
+
+    <div id="div-log">
+    <p>已就餐桌号:</p>
+    </div>
+</body>
+</html>
