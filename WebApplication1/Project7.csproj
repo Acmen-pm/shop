@@ -67,18 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LoginPage.html" />
-    <Content Include="js\jquery-3.1.1.js" />
-    <Content Include="js\mylogin.js" />
-    <Content Include="reserve.html" />
-    <Content Include="Web.config" />
-    <Content Include="css\LoginStyle.css" />
+    <Content Include="css\home.css" />
+    <Content Include="css\首页IndexStyle.css" />
     <Content Include="images\adm.png" />
     <Content Include="images\avtar.png" />
+    <Content Include="images\bg_tab_x.png" />
     <Content Include="images\close.png" />
+    <Content Include="images\home.css" />
+    <Content Include="images\icon_control.png" />
+    <Content Include="images\icon_storage.gif" />
     <Content Include="images\key.png" />
     <Content Include="images\login.jpg" />
     <Content Include="images\magnify.png" />
+    <Content Include="images\mid_banner\banner_01.png" />
+    <Content Include="images\mid_banner\banner_01_repeat.png" />
+    <Content Include="images\mid_banner\banner_02.gif" />
+    <Content Include="images\mid_banner\banner_02_repeat.gif" />
+    <Content Include="images\mid_banner\banner_03.png" />
+    <Content Include="images\mid_banner\banner_03_repeat.png" />
     <Content Include="images\page2-img1.jpg" />
     <Content Include="images\page2-img10.jpg" />
     <Content Include="images\page2-img2.jpg" />
@@ -94,6 +100,7 @@
     <Content Include="images\row-bot-tail.gif" />
     <Content Include="images\sample1.jpg" />
     <Content Include="images\sample10.jpg" />
+    <Content Include="images\sample1_1.jpg" />
     <Content Include="images\sample2.png" />
     <Content Include="images\sample3.jpg" />
     <Content Include="images\sample4.jpg" />
@@ -106,6 +113,16 @@
     <Content Include="images\slider-img2.jpg" />
     <Content Include="images\slider-img3.jpg" />
     <Content Include="images\slider-pagination.png" />
+    <Content Include="js\imgPlay.js" />
+    <Content Include="js\myRegister.js" />
+    <Content Include="LoginPage.html" />
+    <Content Include="js\jquery-3.1.1.js" />
+    <Content Include="js\mylogin.js" />
+    <Content Include="Order.html" />
+    <Content Include="Register.html" />
+    <Content Include="reserve.html" />
+    <Content Include="Web.config" />
+    <Content Include="css\LoginStyle.css" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\DbUtil.cs" />
@@ -117,8 +134,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hotelServer5.ashx" />
+    <Content Include="images\mid_banner\Thumbs.db" />
     <None Include="packages.config" />
     <Content Include="serverFile\LoginSev.ashx" />
+    <Content Include="serverFile\registerSev.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

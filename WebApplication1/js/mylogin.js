@@ -1,7 +1,7 @@
 ﻿function login() {
     var uname = $("#name").val();//获取文本框输入的值
     var upsw = $("#psw").val();
-    if (uname = "" || upsw== "")
+    if (uname == "" || upsw == "")
         alert("用户名密码为空，请补全");
     else {
         $.ajax({
@@ -12,7 +12,8 @@
             success: function (s) {
                 if (s == "用户名错误")
                     alert("无此用户");
-                else if (s == "密码错误") alert("有此用户，密码错误");                   
+                else if (s == "密码错误")
+                    alert("有此用户，但是密码输入错误");                   
                 else {
                     alert(s + "用户登陆成功");
                 }//else结束
